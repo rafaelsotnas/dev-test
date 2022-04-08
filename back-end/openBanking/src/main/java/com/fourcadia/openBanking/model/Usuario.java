@@ -16,6 +16,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 @ComponentScan
 @Entity
 @Table(name = "tb_usuario")
@@ -35,6 +37,7 @@ public class Usuario {
 	@Size(min = 11, message = "O CPF deve conter 11 dígitos.")
 	private String cpf;
 	
+	@Schema(example = "email@email.com.br")
 	@NotNull(message = "E-mail é obrigatório.")
 	@Email(message = "Registre um e-mail válido.")
 	private String email;
