@@ -1,5 +1,43 @@
-/*.back{
-    background-image: '../../assets/img/home.jpeg'!important;
-    background-repeat: no-repeat!important;
-    background-size: cover!important;
-}*/
+.home-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sobrenos-titulo {
+    background-color: #3F51B5;
+    color: white;
+
+    font-style: bold;
+
+    margin-top: 25px;
+}
+
+.sobrenos-texto {
+    background-color: #3F51B5;
+    color: white;
+
+    margin: 50px 100px;
+    text-align: center;
+}
+
+.background-proposito {
+    background-color: white;
+}
+
+.sobrenos-titulo2 {
+    color: #3F51B5;
+
+    font-style: bold;
+    margin: 0 500px;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+.sobrenos-texto2 {
+    color: #3F51B5;
+    background: white;
+
+    margin: 50px 100px;
+    text-align: center;
+}

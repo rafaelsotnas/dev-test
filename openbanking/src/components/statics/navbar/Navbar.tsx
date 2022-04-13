@@ -3,52 +3,53 @@ import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
+
+import { Link, useHistory } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
+
+import { addToken } from '../../../store/tokens/actions';
 
 import './Navbar.css';
-import { Link } from 'react-router-dom';
 
 function Navbar() {
-    return (
-        <>
-            <Box className="decorator" sx={{ flexGrow: 1 }}>
-                <AppBar position="static">
-                    <Toolbar className="decorator">
-                        <IconButton 
-                            size="large"
-                            edge="start"
-                            color="inherit"
-                            aria-label="menu"
-                            sx={{ mr: 2 }}
-                        >
-                        </IconButton>
-                        <Typography className="decorator" variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            Bankadia
-                        </Typography>
-                        <Typography className="decorator" variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            <Link className="decorator" to="/home">
-                            Home
+
+    let history = useHistory();
+    const dispatch = useDispatch();
+    const token = useSelector<TokenState, TokenState['tokens']>(
+        (state) => state.tokens
+    );
+
+    function goLogout() {
+        dispatch(addToken(''))
+        alert("Usuário deslogado")
+        history.push('/login')
+    }
+
+    var navbarComponent;
+
+    if (token !== '') {
+
+        navbarComponent =
+            <Box className="menu" sx={{ flexGrow: 1 }}>
+                <AppBar className="menu" position="static">
+                    <Toolbar>
+                        <Box mx={1} onClick={goLogout}>
+                            <Link className="logout" to="/login">
+                                <Button color="inherit">
+                                    Logout
+                                </Button>
                             </Link>
-                        </Typography>
-                        <Typography className="decorator" variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            Cliente
-                        </Typography>
-                        <Typography className="decorator" variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            Extrato
-                        </Typography>
-                        <Typography className="decorator" variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            Saldo
-                        </Typography>
-                        <Button color="inherit">
-                            <Link to="/login" className="decorator">
-                            Logout
-                            </Link>
-                        </Button>
+                        </Box>
                     </Toolbar>
                 </AppBar>
             </Box>
+    }
+
+    return (
+        <>
+            {navbarComponent}
         </>
     );
 }

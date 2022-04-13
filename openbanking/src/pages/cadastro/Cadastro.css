@@ -1,11 +1,11 @@
-.imagem2 {
+.imagem {
     background-image: url(https://thenextscoop.com/wp-content/uploads/2019/04/What-You-Need-to-Know-About-Digital-Banking.png)!important;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
 
-.textos2 {
+.cadastro-titulo {
     font-style: bold!important;
     color: #303F9F!important;
 }

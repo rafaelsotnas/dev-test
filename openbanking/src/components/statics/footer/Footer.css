@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    background-color: #303F9F;
+    
+    padding: 10px 0px;
+    width: 100%;   
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+}
+
+.footer-titulo{
+    color: white;
+    font-size: 13px;
+}
+
+.git-link a{
+    display: flex;
+
+    background-color: #303F9F;
+    color:#ffffff;
+
+    margin: 25px 50px;
+}
+ 
+.rodape{
+    color: white;
+
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.1em;   
+}

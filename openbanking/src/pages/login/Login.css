@@ -1,7 +1,5 @@
-.cont-login {
-    background-image: url(https://www.retailbankerinternational.com/wp-content/uploads/sites/2/2021/08/document-4082699_1920.jpg)!important;
-    background-repeat: no-repeat!important;
-    background-size: cover!important;
+.login-container {
+    background: linear-gradient(100deg, #303F9F, white 72%)!important; 
     height: 100vh;
 }
 
@@ -10,11 +8,15 @@
     text-decoration: none!important;
 }
 
-.titulo-login {
+.login-titulo {
     color: #303F9F!important;
 }
 
-.decorator {
-    color: #303F9F!important;
+.login-botao {
+    text-decoration: none;
+}
+
+.cadastro-botao {
     text-decoration: none!important;
+    margin-left: 5px;
 }
