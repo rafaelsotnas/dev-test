@@ -65,12 +65,12 @@ function Login() {
                         </Box>
                     </form>
                     <Box display='flex' justifyContent='center' marginTop={2}>
-                        <Box>
+                        <Box className="cadastro-botao">
                             <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
                         </Box>
-                        <Link to="/cadastro">
+                        <Link className="cadastro-botao"to="/cadastro">
                             <Box className="cadastro-botao">
-                                <Typography variant='subtitle1' gutterBottom align='center'>Cadastre-se!</Typography>
+                                <Typography className="cadastro-botao" variant='subtitle1' gutterBottom align='center'>Cadastre-se!</Typography>
                             </Box>
                         </Link>
                     </Box>

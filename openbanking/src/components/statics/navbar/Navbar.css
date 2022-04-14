@@ -1,11 +1,16 @@
 .menu {
     display: flex;
-    justify-items: center;
 }
 
-.logout {
+.nav-home {
+    color: white!important;
+
+    text-decoration: none!important;
+}
+
+.nav-logout {
     color: white;
 
     text-decoration: none;
-    margin-right: 25px;
+    margin-left: 1060px;
 }

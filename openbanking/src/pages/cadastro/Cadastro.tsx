@@ -75,7 +75,7 @@ function Cadastro() {
                         <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarSenha' label='Confirmar Senha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth required/>
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/login' className='decorator'>
-                                <Button variant='contained' color='secondary' className='btnCancelar'>
+                                <Button variant='contained' color='secondary'>
                                     Cancelar
                                 </Button>
                             </Link>

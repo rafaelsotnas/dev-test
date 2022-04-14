@@ -17,6 +17,7 @@
 }
 
 .cadastro-botao {
+    font-weight: bold;
     text-decoration: none!important;
     margin-left: 5px;
 }

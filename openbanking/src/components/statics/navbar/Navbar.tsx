@@ -33,11 +33,18 @@ function Navbar() {
 
         navbarComponent =
             <Box className="menu" sx={{ flexGrow: 1 }}>
-                <AppBar className="menu" position="static">
+                <AppBar position="static">
                     <Toolbar>
+                        <Box mx={1}>
+                            <Link className="nav-home" to="/home">
+                                <Button className="nav-home" color="inherit">
+                                    Home
+                                </Button> 
+                            </Link>
+                        </Box>
                         <Box mx={1} onClick={goLogout}>
-                            <Link className="logout" to="/login">
-                                <Button color="inherit">
+                            <Link className="nav-logout" to="/login">
+                                <Button className="nav-home" color="inherit">
                                     Logout
                                 </Button>
                             </Link>

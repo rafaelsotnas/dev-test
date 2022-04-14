@@ -3,6 +3,10 @@
     justify-content: center;
 }
 
+.consulta-clientes {
+    text-decoration: none;
+}
+
 .sobrenos-titulo {
     background-color: #3F51B5;
     color: white;

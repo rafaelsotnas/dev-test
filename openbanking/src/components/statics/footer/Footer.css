@@ -1,28 +1,28 @@
-*{
+* {
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.footer{
+.footer {
     background-color: #303F9F;
     
     padding: 10px 0px;
     width: 100%;   
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: center;
     width: 100%; 
 }
 
-.footer-titulo{
+.footer-titulo {
     color: white;
     font-size: 13px;
 }
 
-.git-link a{
+.git-link a {
     display: flex;
 
     background-color: #303F9F;
@@ -31,7 +31,7 @@
     margin: 25px 50px;
 }
  
-.rodape{
+.rodape {
     color: white;
 
     text-align: center;
