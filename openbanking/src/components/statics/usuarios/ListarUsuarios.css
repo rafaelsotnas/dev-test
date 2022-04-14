@@ -1,8 +1,8 @@
 .lista-container {
     display: inline-flex;
     justify-content: space-around;
-    margin: 50px 50px;
-    width: 25%;
+    margin: 50px 50px!important;
+    width: 25%!important;
 }
 
 .lista-titulo {
