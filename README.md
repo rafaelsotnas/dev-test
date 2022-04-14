@@ -14,5 +14,3 @@ Alguns métodos desenvolvidos no back-end como buscar usuário, buscar usuário 
 
 Não implementei dashboard, extrato e saldo porque não tenho segurança para fazê-lo. Responsividade também não foi aplicada no projeto.
 
-# Antes de começar
-
